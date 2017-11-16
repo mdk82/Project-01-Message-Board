@@ -10,6 +10,21 @@
 </head>
 
 <body>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyC6FucDpOVW_DqaN3p4F-oc_Vmnc6uBVMY",
+        authDomain: "message-board-project-dc938.firebaseapp.com",
+        databaseURL: "https://message-board-project-dc938.firebaseio.com",
+        projectId: "message-board-project-dc938",
+        storageBucket: "message-board-project-dc938.appspot.com",
+        messagingSenderId: "50008848295"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <div class="container">
         <div class="row">
             <div class="s12 col">
@@ -115,6 +130,8 @@
             </form>
         </div>
     </div>
+
+<script type="text/javascript" src="assets/javascript/messageboard.js"></script>   
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 
 </body>
