@@ -6,7 +6,7 @@
 </head>
 <body>
 	<header class="header page__header">
-		<h1>Message Board Style Guide</h1>
+		<h1 class="fwhite">Message Board Style Guide</h1>
 	</header>
 	<div class="container">
 		<div class="typography-section">
@@ -32,36 +32,46 @@
 			<h4>Form Section</h4>
 			<form>
 				<h4>Exmaple of text input section</h4>
-				First name:<br>
-				<input placeholder="First Name" type="text" name="firstname" autocomplete="on"><br>
-				Last name:<br>
-				<input placeholder="Last Name" type="text" name="lastname" autocomplete="on"><br>
+				<label for="first_name">First Name</label>
+				<input placeholder="First Name" type="text" id="first_name" autocomplete="on">
+				<br>
+				<label for="last_name">Last Name</label>
+				<input placeholder="Last Name" type="text" id="last_name" autocomplete="on">
+				<br>
 
 				<h4>Example of Checkboxes</h4>
-				<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
-  				<input type="checkbox" name="vehicle2" value="Car"> I have a car
+  				<label>
+			     <input type="checkbox" />
+			     <i></i>
+			     <span>Hide Your Name</span>
+			    </label>
+				<br>
+			    <label>
+			     <input type="checkbox" />
+			     <i></i>
+			     <span>Hide Your Location</span>
+			    </label>
 
 				<h4>Example of Message Area</h4>
-				<textarea type="text" name="message">
-				
-				</textarea>
+				<label for="input-message">Leave a message...</label>
+				<textarea placeholder="You're the fucking man." type="text" id="input-message"></textarea>
 				<br>
 
 				<h4>Example of Phone Number</h4>
-				Telephone (Format US numbers only 800-123-4567 ):
-  				<input type="tel" name="usrtel" minlength="12" maxlength="12" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				<label for="input-telephone">Telephone <span>US Numbers Only / Format: 800-123-1234</span></label>
+  				<input placeholder="e.g. 800-123-1234" type="tel" id="input-telephone" minlength="12" maxlength="12" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 
 				<h4>Example of Email</h4>
-				E-mail:<br>
-  				<input placeholder="bacon@yummy.com" type="email" name="email" autocomplete="on">
+				<label for="input-email">Email</label>
+  				<input placeholder="bacon@yummy.com" type="email" id="input-email" autocomplete="on">
 				
 				<h4>Example of Url Input</h4>
-				Website Link:
-  				<input type="url" name="usrLink">
+				<label for="input-link">Website Link: <span>Hidden From Public</span></label>
+  				<input type="url" id="input-link">
 
   				<br>
-				<input type="submit" value="Submit">
-				<input type="reset">
+				<input class="btn__medium" type="submit" value="Submit">
+				<input class="btn__medium" type="reset">
 			</form>
 		</div>
 		<hr>
@@ -80,16 +90,15 @@
 		</div>
 		<hr>
 		<div class="align-section">
-			<h4>Align</h4>
-			<p class="left__align">LEFT ALIGN Black #000000</p>
+			<h4>Text Align</h4>
+			<p class="left__align">LEFT ALIGN Black</p>
 
-			<p class="center__align">CENTER ALIGN Grey #efefef</p>
+			<p class="center__align">CENTER ALIGN Grey</p>
 
-			<p class="right__align">RIGHT ALIGN Navy #0C2D83</p>
+			<p class="right__align">RIGHT ALIGN</p>
 
 		</div>
 	</div>
-	<footer class="footer page__footer">Message Board® 2017</footer>
-
+	<footer class="footer page__footer fwhite">Message Board® 2017</footer>
 </body>
 </html>
