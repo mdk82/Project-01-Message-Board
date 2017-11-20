@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message Board Project</title>
+	<!-- <link rel="icon" type="image/png" href="images/cubano-gw.png"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" href="desktop.css">
+	<!-- Javascript/JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="main__container">
+	<header>
+		<h2 class="fwhite center__align italic">MESSAGE BOARD</h2>
+	</header>
+
+	<section>
+		<h3 class="center__align">Carousel Section</h3>
+	</section>
+
+	<section>
+		<p>
+			Bacon ipsum dolor amet venison meatloaf shankle andouille pastrami, beef corned beef cupim strip steak chicken pork loin frankfurter beef ribs. Cupim leberkas jerky, pastrami cow corned beef short loin buffalo.
+		</p>
+		<button class="btn__medium">LEAVE A MESSAGE</button>
+	</section>
+
+	<section>
+		<h3 class="center__align">Reviews Displayed Section</h3>
+	</section>
+
+	<section>
+		<form>
+			<label for="first_name">First Name</label>
+			<input placeholder="First Name" type="text" id="first_name" autocomplete="on">
+
+			<label for="last_name">Last Name</label>
+			<input placeholder="Last Name" type="text" id="last_name" autocomplete="on">
+
+			<label>
+		     	<input type="checkbox" />
+		     	<i></i>
+		     	<span>Hide Your Name</span>
+		    </label>
+
+		    <label>
+				<input type="checkbox" />
+				<i></i>
+				<span>Hide Your Location</span>
+		    </label>
+			
+			<br>
+			<label for="input-message">
+				Leave a message...
+			</label>
+			<textarea placeholder="You're the fucking man." type="text" id="input-message"></textarea>
+
+			<label for="input-telephone">Telephone <span>US Numbers Only / Format: 800-123-1234</span></label>
+				<input placeholder="e.g. 800-123-1234" type="tel" id="input-telephone" minlength="12" maxlength="12" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+			<label for="input-email">Email</label>
+				<input placeholder="bacon@yummy.com" type="email" id="input-email" autocomplete="on">
+			
+			<label for="input-link">Website Link: <span>Hidden From Public</span></label>
+				<input type="url" id="input-link">
+
+				<br>
+			<input class="btn__medium" type="submit" value="Submit">
+			<input class="btn__medium" type="reset">
+		</form>
+	</section>
+	<footer class="footer page__footer fwhite">
+		<h4 class="fwhite center__align">Message Board 2017 ®</h4>
+	</footer>
+</div>
+</body>
+</html>
