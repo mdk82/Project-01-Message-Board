@@ -1,46 +1,53 @@
 
-// Pull the users input to be used - remember it will be using .val().trim() - Trim is important "#giphy_word"
-// On click "#giphy-button"
-// Set up Giphy URL to allow the searched value to be plugged in
-// Combine the users search term into the url
-// get at least 10 giphy items- console.log() the results
-// have just 1 giphy item to display
-// On click "#shuffle-button"
-// Shuffle button should replace the Giphy with a new Giphy by moving to the next giphy from the array of 10
-
-$(function(){
-	console.log("Page Load")
+$(document).ready(function(){
+console.log("ready!");
 
 
-	$(document).on('click','#giphy-button',function(){
+// Document ready ~ in click giphy-button
+$(document).on('click','#giphy-button',function(){
 		console.log("button clicked")
 
-
+		// Pull the users' input to be used
 		var gifWord = $("#giphy_word").val().trim();
 		console.log(gifWord)
 
+		//Storing our giphy API URL for a ramdon cata image
+		var queryURL = 'http://api.giphy.com/v1/gifs/search?q='+ gifWord +'&api_key=RGGd6MKHcHQW7kQvmNIEHxcD0AyG9j2Q&limit=1';
 
-		var queryURL = 'http://api.giphy.com/v1/gifs/search?q='+ gifWord +'&api_key=RGGd6MKHcHQW7kQvmNIEHxcD0AyG9j2Q&limit=10';
-		console.log(queryURL)
-
-
+		// Ajax GET request to our queryURL
 		$.ajax({
 			url: queryURL,
-			type: "GET"
-		}).done(function(response){
-
-			for(var i=0;i<response.data.length;i++){
-				var searchDiv = $('<div class="search-item">');
-				var animated = response.data[i].images.fixed_height.url;
-				var still = response.data[i].images.fixed_height_still.url;
-				var image = $ ('<img>');
-				image.attr('src',still);
-				image.attr('src',still);
-				image.attr('data-animated',animated);
-				image.attr('data-sate',still);
-				searchDiv.append(image);
-				$()
-			}
+			method: "GET"
 		})
-	})
+		// After the data from the AJAX request 
+		.done(function(response) {
+			
+			$("#giphy_word").empty();
+
+			// Storing variables
+			var results = response.data;
+
+			// Looping over every result item
+			for (var i = 0; i < results.length; i++) {
+			
+				// Creating a div with the class "item"
+				var gifDiv = $("<div class='item'>");
+
+				// Creating an image tag
+
+				var feelingImage = $('<img>');
+
+				// Setting the feelingImage a new attribute
+				feelingImage.attr("src", results[i].images.fixed_height.url);
+				feelingImage.attr("alt", "your opinion is pointless");
+
+				// Appending 
+				gifDiv.append(feelingImage);
+
+				// Prepending the gifDiv
+				$(".users-giphy").prepend(gifDiv);
+				// Prepend the entire giphy
+			}	
+		});
+	});
 });
