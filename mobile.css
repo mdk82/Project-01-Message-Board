@@ -14,3 +14,47 @@ section {
 	border-radius: 5px;
 	padding: 15px;
 }
+
+.display-gif img {
+ width:100%;
+ margin: 10px 0;
+}
+
+.message_container {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 10px;
+}
+
+.name__switch {
+	margin-right: 20px;
+}
+
+.location__switch {
+	
+}
+
+.reset__button {
+
+}
+
+.submit__button {
+	margin-right: 20px;
+}
+
+#shuffle-button {
+
+}
+
+#giphy-button {
+	margin-right: 20px;
+}
+
+.form__btns, .giphy_buttons {
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
