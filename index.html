@@ -8,7 +8,7 @@
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
 </head>
 
 <body>
@@ -39,11 +39,11 @@
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input placeholder="First Name" id="first_name" type="text" class="validate">
+                        <input placeholder="First Name" id="first-name" type="text" class="validate">
                         <label for="first_name"></label>
                     </div>
                     <div class="input-field col s6">
-                        <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                        <input placeholder="Last Name" id="last-name" type="text" class="validate">
                         <label for="last_name"></label>
                     </div>
                 </div>
@@ -51,18 +51,18 @@
                     <div class="col s6">
                           <div class="switch">
                             <label>
-                              <input type="checkbox">
-                              <span class="lever"></span>
-                              Hide Your Location
+                              <input type="checkbox" />
+                              <i></i>
+                              <span>Hide Your Location</span>
                             </label>
                           </div>
                     </div>
                     <div class="col s6">
                         <div class="switch">
                             <label>
-                              <input type="checkbox">
-                              <span class="lever"></span>
-                              Hide Your Name
+                              <input type="checkbox" />
+                              <i></i>
+                              <span>Hide Your Location</span>
                             </label>
                           </div>
                     </div>
@@ -86,15 +86,19 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12">
-                        <input placeholder="Send me a link to your portfolio or LinkedIn, so I can stalk you back. (will not be displayed to public)" id="input-link" type="text" class="validate">
-                        <label for="input-link"></label>
+                    <div class="input-field col s6">
+                        <input placeholder="Send me a link to your LinkedIn." id="input-linkedin" type="text" class="validate">
+                        <label for="input-linkedin"></label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Send me a link to your portfolio." id="input-portfolio" type="text" class="validate">
+                        <label for="input-portfolio"></label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <input placeholder="In one word how do you feel about my site?" id="giphy_word" type="text" class="validate">
-                        <label for="giphy_word"></label>
+                        <input placeholder="In one word how do you feel about my site?" id="giphy-word" type="text" class="validate">
+                        <label for="giphy-word"></label>
                         <div class="row">
                             <div class="col s6 right-align">
                                 <div class="waves-effect waves-light btn-large blue" id="giphy-button">SEE MAGIC</div>
