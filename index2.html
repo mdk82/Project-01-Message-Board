@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message Board Project</title>
+    <!-- <link rel="icon" type="image/png" href="images/cubano-gw.png"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css">
+    <!-- Javascript/JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main__container">
+        <header>
+            <h2 class="fwhite center__align italic">MESSAGE BOARD</h2>
+        </header>
+        <section>
+            <h3 class="center__align">Carousel Section</h3>
+        </section>
+        <section>
+            <p>
+                Bacon ipsum dolor amet venison meatloaf shankle andouille pastrami, beef corned beef cupim strip steak chicken pork loin frankfurter beef ribs. Cupim leberkas jerky, pastrami cow corned beef short loin buffalo.
+            </p>
+            <button class="btn__medium">LEAVE A MESSAGE</button>
+        </section>
+        <section>
+            <h3 class="center__align">Reviews Displayed Section</h3>
+            <hr>
+
+            <div class="message_container">
+            	<div class="message_post">
+	            	<div class="name__row">
+	            		<h4 class="display-name">
+	            			Garrett W. <span class="display-location">San Clemente, CA</span>
+	            		</h4>
+	            	</div>
+			        <div class="message__row">
+			        	<p class="display-message">
+			        		Bacon ipsum dolor amet porchetta chicken tongue, tenderloin corned beef filet mignon meatball kevin doner. Pig doner shankle capicola chicken sirloin turkey cow buffalo meatloaf pork loin brisket tail kevin biltong. Shankle tongue tri-tip ham hock strip steak. Landjaeger rump strip steak shank pork loin, ham meatloaf shoulder tenderloin sirloin.
+			        	</p>
+			        </div>
+			        <div class="date__row right__align">
+			        	<span class="display-timeDate">Nov 11, 2017 11:59pm</span>
+			        </div>
+			    </div>
+		        <div class="giphy_post">
+		        	<div class="display-gif">
+		        		<img src="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/dashyjny2rxo1yzlzec7/austin-powers-4-official-update.jpg" alt="austin">
+		        	</div>
+		        	<div class="message__portfolio center__align">
+			      			<button class="message__url btn__small btn__light">Portfolio</button>
+			      	</div>
+		        </div>
+            </div>
+            
+            <div class="message_container">
+            	<div class="message_post">
+	            	<div class="name__row">
+	            		<h4 class="display-name">
+	            			Garrett W. <span class="display-location">San Clemente, CA</span>
+	            		</h4>
+	            	</div>
+			        <div class="message__row">
+			        	<p class="display-message">
+			        		Bacon ipsum dolor amet porchetta chicken tongue, tenderloin corned beef filet mignon meatball kevin doner. Pig doner shankle capicola chicken sirloin turkey cow buffalo meatloaf pork loin brisket tail kevin biltong. Shankle tongue tri-tip ham hock strip steak. Landjaeger rump strip steak shank pork loin, ham meatloaf shoulder tenderloin sirloin.
+			        	</p>
+			        </div>
+			        <div class="date__row right__align">
+			        	<span class="display-timeDate">Nov 11, 2017 11:59pm</span>
+			        </div>
+			    </div>
+		        <div class="giphy_post">
+		        	<div class="display-gif">
+		        		<img src="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/dashyjny2rxo1yzlzec7/austin-powers-4-official-update.jpg" alt="austin">
+		        	</div>
+		        	<div class="message__portfolio center__align">
+			      			<button class="message__url btn__small btn__light">Portfolio</button>
+			      	</div>
+		        </div>
+            </div>
+        </section>
+        <section>
+            <form>
+                <label for="first_name"><span>First Name</span></label>
+                <input placeholder="First Name" type="text" id="first_name" autocomplete="on">
+                <label for="last_name"><span>Last Name (only the last initial will be displayed)</span></label>
+                <input placeholder="Last Name" type="text" id="last_name" autocomplete="on">
+                <label class="name__switch">
+                    <input type="checkbox" />
+                    <i></i>
+                    <span>Hide Your Name</span>
+                </label>
+                <label class="location__switch">
+                    <input type="checkbox" />
+                    <i></i>
+                    <span>Hide Your Location</span>
+                </label>
+                <br>
+                <label for="input-telephone"><span>Telephone (US Numbers Only / Hidden From Public)</span></label>
+                <input placeholder="Format: 800-123-1234" type="tel" id="input-telephone" minlength="12" maxlength="12" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <label for="input-email"><span>Email (Hidden From Public)</span></label>
+                <input placeholder="bacon@yummy.com" type="email" id="input-email" autocomplete="on">
+                <label for="input-message">
+                    <span>Leave a message...</span>
+                </label>
+                <textarea placeholder="You're the fucking man." type="text" id="input-message"></textarea>   
+                <label for="giphy_word"><span>In 1 or 2 words, thoughts of my site?</span></label>
+                <input placeholder="you rock" id="giphy_word" type="text" class="validate">
+                <div class="giphy_buttons">
+                	<button class="btn__small btn__light" id="giphy-button">
+                		See Magic
+                	</button>
+                	<button class="btn__small btn__light" id="shuffle-button">
+                		Shuffle
+                	</button>
+                </div>
+                <div class="users-giphy"></div>
+                <label for="input-link"><span>Website Link (i.e. LinkedIn or Portfolio Site)</span></label>
+                <input type="url" id="input-link">
+                <div class="form__btns">
+                    <button class="btn__medium submit__button" type="submit">SUBMIT</button>
+                    <button class="btn__medium reset__button" type="reset">RESET</button>
+                </div>
+            </form>
+        </section>
+        <footer class="footer page__footer fwhite">
+            <h4 class="fwhite center__align">Message Board 2017 ®</h4>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style Guide for Message Board</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		/* Section Just For Testing/Building */
+		body {
+		    background: pink; /* For browsers that do not support gradients */    
+		    background: -webkit-linear-gradient(left top, #0C2D83, #FF4081); /* For Safari 5.1 to 6.0 */
+		    background: -o-linear-gradient(bottom right, #0C2D83, #FF4081); /* For Opera 11.1 to 12.0 */
+		    background: -moz-linear-gradient(bottom right, #0C2D83, #FF4081); /* For Firefox 3.6 to 15 */
+		    background: linear-gradient(to bottom right, #0C2D83, #FF4081); /* Standard syntax (must be last) */
+		}
+
+		header h1, footer {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+
+		.container {
+			background-color: white;
+			max-width: 960px;
+			margin: 20px auto;
+			padding: 20px 15px;
+		}
+
+
+		form {
+			width: 50%;
+			background-color: #fff;
+			border: 5px solid #ccc;
+			padding: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<header class="header page__header">
+		<h1 class="fwhite">Message Board Style Guide</h1>
+	</header>
+	<div class="container">
+		<div class="typography-section">
+			<h4>Typography</h4>
+			<hr>
+			<h1>H1- This is the H1 section.</h1>
+			<h2>H2- One down the level.</h2>
+			<h3>H3- Useful H3 font!</h3>
+			<h4>H4- Somewhat used H4 section.</h4>
+			<h5>H5 - used for captions will be small</h5>
+			<h5 class="italic">H5 italic - used for captions will be small</h5>
+			<p>Oooo this is the paragraph text and will be used a lot. </p>
+			
+		</div>
+		<div class="button-seciton">
+			<button class="btn__small">Small Button</button>
+			<button class="btn__medium">Medium Button</button>
+			<button class="btn__large">Large Button</button>
+			 
+			<button class="btn__small btn__light">Small Button</button>
+			<button class="btn__medium btn__light">Medium Button</button>
+			<button class="btn__large btn__light">Large Button</button>
+
+			<!-- <button class="btn__small">Small Button</button>
+			<button class="btn__medium">Medium Button</button>
+			<button class="btn__medium disabled">Disabled Button</button>
+			<button class="btn__large">Large Button</button> -->
+		</div>
+		<hr>
+		<div class="form-section">
+			<h4>Form Section</h4>
+			<form>
+				<h4>Exmaple of text input section</h4>
+				<label for="first_name">First Name</label>
+				<input placeholder="First Name" type="text" id="first_name" autocomplete="on">
+				<br>
+				<label for="last_name">Last Name</label>
+				<input placeholder="Last Name" type="text" id="last_name" autocomplete="on">
+				<br>
+
+				<h4>Example of Checkboxes</h4>
+  				<label>
+			     <input type="checkbox" />
+			     <i></i>
+			     <span>Hide Your Name</span>
+			    </label>
+				<br>
+			    <label>
+			     <input type="checkbox" />
+			     <i></i>
+			     <span>Hide Your Location</span>
+			    </label>
+
+				<h4>Example of Message Area</h4>
+				<label for="input-message">Leave a message...</label>
+				<textarea placeholder="You're the fucking man." type="text" id="input-message"></textarea>
+				<br>
+
+				<h4>Example of Phone Number</h4>
+				<label for="input-telephone">Telephone <span>US Numbers Only / Format: 800-123-1234</span></label>
+  				<input placeholder="e.g. 800-123-1234" type="tel" id="input-telephone" minlength="12" maxlength="12" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+				<h4>Example of Email</h4>
+				<label for="input-email">Email</label>
+  				<input placeholder="bacon@yummy.com" type="email" id="input-email" autocomplete="on">
+				
+				<h4>Example of Url Input</h4>
+				<label for="input-link">Website Link: <span>Hidden From Public</span></label>
+  				<input type="url" id="input-link">
+
+  				<input placeholder="In one word how do you feel about my site?" id="giphy_word" type="text" class="validate">
+  				
+                <label for="giphy_word"></label>
+				<input class="btn__medium" type="submit" value="Submit">
+				<input class="btn__medium" type="reset">
+			</form>
+		</div>
+		<hr>
+		<div class="color-section">
+			<h4>Colors</h4>
+			<p>Black #000000</p>
+			<div class="black-box color-box"></div>
+			<p>Grey #efefef</p>
+			<div class="grey-box color-box"></div>
+			<p>Navy #0C2D83</p>
+			<div class="navy-box color-box"></div>
+			<p>Black #FF4081</p>
+			<div class="pink-box color-box"></div>
+			<p>Gradient Box</p>
+			<div class="grad-box color-box"></div>
+		</div>
+		<hr>
+		<div class="align-section">
+			<h4>Text Align</h4>
+			<p class="left__align">LEFT ALIGN Black</p>
+
+			<p class="center__align">CENTER ALIGN Grey</p>
+
+			<p class="right__align">RIGHT ALIGN</p>
+
+		</div>
+	</div>
+	<footer class="footer page__footer fwhite">Message Board® 2017</footer>
+</body>
+</html>
