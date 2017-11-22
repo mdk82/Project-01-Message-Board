@@ -1,0 +1,21 @@
+@media screen and (min-width: 800px) {
+	body {
+		background: red;
+	}
+	.description__container {
+		display: inline-flex;
+	}
+
+	.description p {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.leave__message {
+		display: flex;
+		justify-content: flex-end;
+		margin: auto;
+		margin-right: 20px;
+		margin-left: 10px; 
+	}
+}

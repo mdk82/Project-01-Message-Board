@@ -13,6 +13,7 @@ section {
 	margin: 15px auto;
 	border-radius: 5px;
 	padding: 15px;
+	box-shadow: 2px 2px 10px #323232;
 }
 
 .display-gif img {
@@ -51,6 +52,12 @@ section {
 
 .form__btns, .giphy_buttons {
 	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+}
+
+.leave__message {
+	margin: 30px 10px 10px 10px;
 	display: flex;
 	justify-content: center;
 }
