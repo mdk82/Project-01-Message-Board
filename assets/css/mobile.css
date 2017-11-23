@@ -13,11 +13,15 @@ section {
 	margin: 15px auto;
 	border-radius: 5px;
 	padding: 15px;
+	box-shadow: 2px 2px 10px #323232;
 }
 
 .display-gif img {
- width:100%;
- margin: 10px 0;
+	display: none;
+}
+
+.display-timeDate {
+	margin-bottom: 10px;
 }
 
 .message_container {
@@ -55,6 +59,12 @@ section {
 	justify-content: center;
 }
 
+.description p {
+	line-height: 150%;
+}
 
-
-
+.leave__message {
+	margin: 30px 10px 10px 10px;
+	display: flex;
+	justify-content: center;
+}
