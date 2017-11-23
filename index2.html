@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <title>Message Board Project</title>
+
+    <title>Portfolio Review System</title>
+
     <!-- <link rel="icon" type="image/png" href="images/cubano-gw.png"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Stylesheets -->
@@ -10,25 +12,31 @@
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="desktop.css">
     <!-- Javascript/JQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 </head>
 
 <body>
     <div class="main__container">
         <header>
-            <h2 class="fwhite center__align italic">MESSAGE BOARD</h2>
+            <h2 class="fwhite center__align italic">Portfolio Review App</h2>
         </header>
         <section>
             <h3 class="center__align">Carousel Section</h3>
         </section>
         <section>
             <p>
-                Bacon ipsum dolor amet venison meatloaf shankle andouille pastrami, beef corned beef cupim strip steak chicken pork loin frankfurter beef ribs. Cupim leberkas jerky, pastrami cow corned beef short loin buffalo.
+                We hope that you enjoy our first project with UCI coding bootcamp. Please click the "LEAVE A MESSAGE button below to leave us your feedback. We appreciate your support!"         - Garrett, Michael and Danilo
             </p>
-            <button class="btn__medium">LEAVE A MESSAGE</button>
+            <button class="btn__medium" id="anchor-button">LEAVE A MESSAGE</button>
         </section>
-        <section>
-            <h3 class="center__align">Reviews Displayed Section</h3>
+        <section id="display-container">
+            <h3 class="center__align">Review Display Section</h3>
+          
             <hr>
 
             <div class="message_container">
@@ -49,7 +57,9 @@
 			    </div>
 		        <div class="giphy_post">
 		        	<div class="display-gif">
-		        		<img src="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/dashyjny2rxo1yzlzec7/austin-powers-4-official-update.jpg" alt="austin">
+
+		        		<img id="display-gif" src="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/dashyjny2rxo1yzlzec7/austin-powers-4-official-update.jpg" alt="austin">
+
 		        	</div>
 		        	<div class="message__portfolio center__align">
 			      			<button class="message__url btn__small btn__light">Portfolio</button>
@@ -86,9 +96,11 @@
         <section>
             <form>
                 <label for="first_name"><span>First Name</span></label>
-                <input placeholder="First Name" type="text" id="first_name" autocomplete="on">
-                <label for="last_name"><span>Last Name (only the last initial will be displayed)</span></label>
-                <input placeholder="Last Name" type="text" id="last_name" autocomplete="on">
+
+                <input placeholder="First Name" type="text" id="first-name" autocomplete="on">
+                <label for="last-name"><span>Last Name (only the last initial will be displayed)</span></label>
+                <input placeholder="Last Name" type="text" id="last-name" autocomplete="on">
+
                 <label class="name__switch">
                     <input type="checkbox" />
                     <i></i>
@@ -109,7 +121,9 @@
                 </label>
                 <textarea placeholder="You're the fucking man." type="text" id="input-message"></textarea>   
                 <label for="giphy_word"><span>In 1 or 2 words, thoughts of my site?</span></label>
-                <input placeholder="you rock" id="giphy_word" type="text" class="validate">
+              
+                <input placeholder="you rock" id="giphy-word" type="text" class="validate">
+
                 <div class="giphy_buttons">
                 	<button class="btn__small btn__light" id="giphy-button">
                 		See Magic
@@ -122,8 +136,10 @@
                 <label for="input-link"><span>Website Link (i.e. LinkedIn or Portfolio Site)</span></label>
                 <input type="url" id="input-link">
                 <div class="form__btns">
-                    <button class="btn__medium submit__button" type="submit">SUBMIT</button>
-                    <button class="btn__medium reset__button" type="reset">RESET</button>
+
+                    <button class="btn__medium submit__button" id="submit-button" type="submit">SUBMIT</button>
+                    <button class="btn__medium reset__button" id="reset-button" type="reset">RESET</button>
+
                 </div>
             </form>
         </section>
@@ -131,6 +147,12 @@
             <h4 class="fwhite center__align">Message Board 2017 ®</h4>
         </footer>
     </div>
+
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="messageboard.js"></script>
+
+
 </body>
 
 </html>
