@@ -1,0 +1,69 @@
+@media screen and (min-width: 800px) {
+	body {
+		background: red;
+	}
+	.description__container {
+		display: inline-flex;
+	}
+
+	.description p {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.leave__message {
+		display: flex;
+		justify-content: flex-end;
+		margin: auto;
+		margin-right: 20px;
+		margin-left: 10px; 
+	}
+
+	.display-gif img {
+		display: inline;
+		width:100%;
+		margin: 10px 0;
+	}
+
+
+	.message_container {
+		/*display: inline-flex;*/
+		display: inline-block;
+	}
+	
+	.message_post {
+		width: 60%;
+		margin-right: 5%;
+		float: left;
+		/*display: flex;
+		justify-content: flex-start;*/
+	}
+
+	.giphy_post {
+		width: 35%;
+		float: right;
+		/*display: flex;
+		justify-content: flex-end;*/
+	}
+
+	.name__wrapper, .contact__wrapper, .giphy__wrapper {
+		display: block;
+	}
+
+
+	.first__name, .telephone__wrapper, .giphy__input {
+		width: 49%;
+		margin-right: 2%;
+		float: left;
+	}
+
+	.last__name, .email__wrapper, .display__giphy {
+		width: 49%;
+		float: right;
+	}
+
+	.clearfix {
+		overflow: auto;
+	}
+
+}
