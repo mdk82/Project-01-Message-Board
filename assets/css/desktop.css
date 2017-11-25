@@ -46,19 +46,24 @@
 		justify-content: flex-end;*/
 	}
 
-	.name__wrapper {
-		display: inline-block;
+	.name__wrapper, .contact__wrapper, .giphy__wrapper {
+		display: block;
 	}
 
-	.first__name {
+
+	.first__name, .telephone__wrapper, .giphy__input {
 		width: 49%;
 		margin-right: 2%;
 		float: left;
 	}
 
-	.last__name {
+	.last__name, .email__wrapper, .display__giphy {
 		width: 49%;
 		float: right;
+	}
+
+	.clearfix {
+		overflow: auto;
 	}
 
 }

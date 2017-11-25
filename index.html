@@ -26,9 +26,6 @@
             <h2 class="fwhite center__align italic">Portfolio Review App</h2>
         </header>
         <section>
-            <h3 class="center__align">Carousel Section</h3>
-        </section>
-        <section>
             <div class="description__container">
                 <div class="description">
                     <p>
@@ -127,21 +124,26 @@
                 
                 <br>
                 <div class="contact__wrapper">
-                    <label for="input-telephone">
-                        <span>Telephone (US Numbers Only / Hidden From Public)</span>
-                    </label>
-                    <input placeholder="Format: 800-123-1234" type="tel" id="input-telephone" minlength="12" maxlength="12" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                    <label for="input-email">
-                        <span>Email (Hidden From Public)</span>
-                    </label>
-                    <input placeholder="bacon@yummy.com" type="email" id="input-email" autocomplete="on">
+                    <div class="telephone__wrapper">
+                       <label for="input-telephone">
+                            <span>Telephone (US Numbers Only / Hidden From Public)</span>
+                        </label>
+                        <input placeholder="Format: 800-123-1234" type="tel" id="input-telephone" minlength="12" maxlength="12" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+                    </div>
+                    
+                    <div class="email__wrapper">
+                        <label for="input-email">
+                            <span>Email (Hidden From Public)</span>
+                        </label>
+                        <input placeholder="bacon@yummy.com" type="email" id="input-email" autocomplete="on">
+                    </div>
                 </div>
 
                 <div class="url__wrapper">
                     <label for="input-link">
                         <span>Website Link (i.e. LinkedIn or Portfolio Site)</span>
                     </label>
-                    <input type="url" id="input-link">
+                    <input placeholder="https://www.linkedin.com/" type="url" id="input-link">
                 </div>
                 <div class="message__wrapper">
                     <label for="input-message">
@@ -150,20 +152,28 @@
                     <textarea placeholder="You're the fucking man." type="text" id="input-message"></textarea>
                 </div>
                 
-                <div class="giphy__wrapper">
-                    <label for="giphy_word"><span>In 1 or 2 words, thoughts of my site?</span></label>
+                <div class="giphy__wrapper clearfix">
+                    <div class="giphy__input">
+                        <label for="giphy_word">
+                            <span>
+                            In 1 or 2 words, thoughts of my site?
+                            </span>
+                        </label>
               
-                    <input placeholder="you rock" id="giphy-word" type="text" class="validate">
+                        <input placeholder="you rock" id="giphy-word" type="text" class="validate">
 
-                    <div class="giphy_buttons">
-                        <button class="btn__small btn__light" id="giphy-button">
-                            See Magic
-                        </button>
-                        <button class="btn__small btn__light" id="shuffle-button">
-                            Shuffle
-                        </button>
+                        <div class="giphy_buttons">
+                            <button class="btn__small btn__light" id="giphy-button">
+                                See Magic
+                            </button>
+                            <button class="btn__small btn__light" id="shuffle-button">
+                                Shuffle
+                            </button>
+                        </div>
                     </div>
-                    <div class="users-giphy"></div>
+                    <div class="display__giphy">
+                       <div class="users-giphy"></div> 
+                    </div>
                 </div>
                 
                 <div class="form__btns">

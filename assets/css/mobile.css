@@ -29,6 +29,10 @@ section {
 	padding-bottom: 10px;
 }
 
+.switches__wrapper {
+	margin-bottom: -10px;
+}
+
 .name__switch {
 	margin-right: 20px;
 }
@@ -41,16 +45,24 @@ section {
 
 }
 
-.users-giphy {
-	min-height: 150px;
-	padding: 15px;
-	background-color: #eee;
+.display__giphy {
 	display: flex;
 	justify-content: center;
 }
 
+.users-giphy {
+	width: 100%;
+	max-width: 350px;
+	min-height: 150px;
+	padding: 15px;
+	background-color: #f3f3f3;
+}
+
+.users-giphy img {
+	width: 100%;
+}
 .submit__button {
-	margin-right: 20px;
+	margin-right: 20px;5B5B5B
 }
 
 #shuffle-button {
