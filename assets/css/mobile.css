@@ -41,6 +41,14 @@ section {
 
 }
 
+.users-giphy {
+	min-height: 150px;
+	padding: 15px;
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+}
+
 .submit__button {
 	margin-right: 20px;
 }
