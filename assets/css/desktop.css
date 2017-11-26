@@ -51,13 +51,13 @@
 	}
 
 
-	.first__name, .telephone__wrapper, .giphy__input {
+	.first__name, .email__wrapper, .giphy__input {
 		width: 49%;
 		margin-right: 2%;
 		float: left;
 	}
 
-	.last__name, .email__wrapper, .display__giphy {
+	.last__name, .telephone__wrapper, .display__giphy {
 		width: 49%;
 		float: right;
 	}
