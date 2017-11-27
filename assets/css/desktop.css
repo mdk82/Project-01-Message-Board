@@ -25,6 +25,7 @@
 
 
 	.message_container {
+		width: 100%;
 		/*display: inline-flex;*/
 		display: inline-block;
 	}
