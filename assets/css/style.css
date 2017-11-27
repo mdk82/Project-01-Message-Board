@@ -77,73 +77,25 @@ span {
 
 /*Buttons*/
 
-/*
+button:focus {
+  outline: 0;
+}
 
 .btn__small {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #000;
-  padding: 5px 10px;
-  width: 125px;
-  height: 40px;
-  border-radius: 5px;
-  border: 0;
-}
-
-.btn__medium {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #000;
-  padding: 10px 20px;
-  width: 175px;
-  height: 50px;
-  border-radius: 5px;
-  border: 0;
-}
-
-.btn__large {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #000;
-  padding: 15px 30px;
-  width: 200px;
-  height: 60px;
-  border-radius: 5px;
-  border: 0;
-}
-.btn__small, .btn__medium, .btn__large {
-  cursor: pointer;
-  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
-}
-.btn__small:hover, .btn__medium:hover, .btn__large:hover {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
-  transform: scale(1.05) translateY(-0.1rem);
-}
-.btn__small:active, .btn__medium:active, .btn__large:active {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 16px 16px rgba(0, 0, 0, 0.15), 8px 32px 32px rgba(0, 0, 0, 0.15);
-}*/
-
-.btn__small {
+  padding-top: 4px;
   top: 0px;
   border-radius: 5px;
   position: relative;
   border: none;
   background: #121212;
-  font-family: "Arial", sans-serif;
-  font-weight: bold;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   width: 120px;
   height: 40px;
   cursor: pointer;
   transition: 0.1s all ease;
   font-size: 10px;
-  letter-spacing: .03em;
   font-weight: 300;
   color: #fff;
   border-bottom: 4px solid #000;
@@ -152,19 +104,20 @@ span {
 }
 
 .btn__medium {
+  padding-top: 4px;
   top: 0px;
   border-radius: 5px;
   position: relative;
   border: none;
   background: #121212;
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   width: 160px;
   height: 50px;
   cursor: pointer;
   transition: 0.1s all ease;
   font-size: 14px;
-  letter-spacing: .05em;
   font-weight: 300;
   color: #fff;
   border-bottom: 4px solid #000;
@@ -173,19 +126,20 @@ span {
 }
 
 .btn__large {
+  padding-top: 4px;
   top: 0px;
   border-radius: 5px;
   position: relative;
   border: none;
   background: #121212;
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   width: 200px;
   height: 60px;
   cursor: pointer;
   transition: 0.1s all ease;
   font-size: 16px;
-  letter-spacing: .05em;
   font-weight: 300;
   color: #fff;
   border-bottom: 4px solid #000;
@@ -195,7 +149,7 @@ span {
 button:hover {
   background-color: #000;
   border-bottom: 4px solid #323232;
-  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -206,35 +160,58 @@ button:active {
 }
 
 .btn__light {
-  background-color: #ECECEC;
-  color: #5B5B5B;
-  border-bottom: 4px solid #ececec;
+  background-color: #717171;
+  color: #fff;
+  border-bottom: 4px solid #717171;
 }
 
 .btn__light:hover {
-  background-color: #eee;
-  border-bottom: 4px solid #727272;
-  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+  background-color: #717171;
+  border-bottom: 4px solid #5B5B5B;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .btn__light:active {
-  border-bottom: 4px solid #e1e1e1;
-  background-color: #eee;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+  background-color: #5B5B5B;
   box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
 
-
-
-button.disabled, .disabled:active, .disabled:hover {
-	background-color: #eee !important; 
-	color: #9a9a9a !important;
+.btn__pink {
+  background-color: #FA78A4;
+  color: #fff;
+  border-bottom: 4px solid #FA78A4;
 }
 
-/*get rid of blue box around buttons on chrome*/
-button:focus {
-	outline:0;
+.btn__pink:hover {
+  background-color: #FA78A4;
+  border-bottom: 4px solid #FF5B93;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
+.btn__pink:active {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+  background-color: #FF5B93;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn__blue {
+  background-color: #5F6DA0;
+  color: #fff;
+  border-bottom: 4px solid #5F6DA0;
+}
+
+.btn__blue:hover {
+  background-color: #5F6DA0;
+  border-bottom: 4px solid #495A98;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn__blue:active {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+  background-color: #495A98;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
 
 
 /* Form Styles */

@@ -7,10 +7,7 @@
 
     <!-- <link rel="icon" type="image/png" href="images/cubano-gw.png"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
-    <link rel="stylesheet" href="assets/css/desktop.css">
+
     <!-- Javascript/JQuery -->
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -18,6 +15,13 @@
     crossorigin="anonymous"></script>
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+        <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/desktop.css">
 </head>
 
 <body>
@@ -37,67 +41,23 @@
                 </div>
                 
                 <div class="leave__message">
-                    <button id="anchor-button" class="btn__medium">LEAVE A MESSAGE</button>
+                    <button id="anchor-button" class="btn__medium">LEAVE A REVIEW</button>
                 </div>
             </div>
         </section>
         <section id="display-container">
-
-            <div class="message_container">
-            	<div class="message_post">
-	            	<div class="name__row">
-	            		<h4 class="display-name">
-	            			Garrett W. <span class="display-location">San Clemente, CA</span>
-	            		</h4>
-	            	</div>
-			        <div class="message__row">
-			        	<p class="display-message">
-			        		Bacon ipsum dolor amet porchetta chicken tongue, tenderloin corned beef filet mignon meatball kevin doner. Pig doner shankle capicola chicken sirloin turkey cow buffalo meatloaf pork loin brisket tail kevin biltong. Shankle tongue tri-tip ham hock strip steak. Landjaeger rump strip steak shank pork loin, ham meatloaf shoulder tenderloin sirloin.
-			        	</p>
-			        </div>
-			        <div class="date__row right__align">
-			        	<span class="display-timeDate">Nov 11, 2017 11:59pm</span>
-			        </div>
-			    </div>
-		        <div class="giphy_post">
-		        	<div class="display-gif">
-
-		        		<img id="display-gif" src="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/dashyjny2rxo1yzlzec7/austin-powers-4-official-update.jpg" alt="austin">
-
-		        	</div>
-		        	<div class="message__portfolio center__align">
-			      			<button class="message__url btn__small btn__light">Portfolio</button>
-			      	</div>
-		        </div>
+            <div class="review__title">
+                <h3 class="center__align">RECENT REVIEW</h3>
+                <hr>
             </div>
-            
-            <div class="message_container">
-            	<div class="message_post">
-	            	<div class="name__row">
-	            		<h4 class="display-name">
-	            			Garrett W. <span class="display-location">San Clemente, CA</span>
-	            		</h4>
-	            	</div>
-			        <div class="message__row">
-			        	<p class="display-message">
-			        		Bacon ipsum dolor amet porchetta chicken tongue, tenderloin corned beef filet mignon meatball kevin doner. Pig doner shankle capicola chicken sirloin turkey cow buffalo meatloaf pork loin brisket tail kevin biltong. Shankle tongue tri-tip ham hock strip steak. Landjaeger rump strip steak shank pork loin, ham meatloaf shoulder tenderloin sirloin.
-			        	</p>
-			        </div>
-			        <div class="date__row right__align">
-			        	<span class="display-timeDate">Nov 11, 2017 11:59pm</span>
-			        </div>
-			    </div>
-		        <div class="giphy_post">
-		        	<div class="display-gif">
-		        		<img src="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/dashyjny2rxo1yzlzec7/austin-powers-4-official-update.jpg" alt="austin">
-                        <div class="message__portfolio center__align">
-                            <button class="message__url btn__small btn__light">Portfolio</button>
-                        </div>
-		        	</div>
-		        </div>
-            </div>
+
         </section>
         <section>
+            <div class="reviewform__title">
+                <h3 class="center__align">LEAVE A REVIEW</h3>
+                <hr>
+            </div>
+
             <form>
                 <div class="name__wrapper">
                     <div class="first__name">
@@ -109,7 +69,7 @@
                         <input placeholder="Last Name" type="text" id="last-name" autocomplete="on">
                     </div>
                 </div>
-                <div class="switches__wrapper">
+<!--                 <div class="switches__wrapper">
                    <label class="name__switch">
                         <input type="checkbox" />
                         <i></i>
@@ -120,7 +80,7 @@
                         <i></i>
                         <span>Hide Your Location</span>
                     </label> 
-                </div>
+                </div> -->
                 
                 <br>
                 <div class="contact__wrapper">
@@ -163,10 +123,10 @@
                         <input placeholder="you rock" id="giphy-word" type="text" class="validate">
 
                         <div class="giphy_buttons">
-                            <button class="btn__small btn__light" id="giphy-button">
+                            <button class="btn__small btn__blue" id="giphy-button">
                                 See Magic
                             </button>
-                            <button class="btn__small btn__light" id="shuffle-button">
+                            <button class="btn__small btn__pink" id="shuffle-button">
                                 Shuffle
                             </button>
                         </div>
@@ -179,7 +139,7 @@
                 <div class="form__btns">
 
                     <button class="btn__medium submit__button" id="submit-button" type="submit">SUBMIT</button>
-                    <button class="btn__medium reset__button" id="reset-button" type="reset">RESET</button>
+                    <button class="btn__medium btn__light reset__button" id="reset-button" type="reset">RESET</button>
 
                 </div>
             </form>
@@ -191,7 +151,9 @@
 
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="messageboard.js"></script>
+    <script type="text/javascript" src="assets/js/messageboard.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/garrett.js"></script> -->
+
 
 
 </body>
