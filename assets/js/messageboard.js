@@ -47,7 +47,7 @@ $(document).on('click','#giphy-button',function() {
         var gifWord = $("#giphy-word").val().trim();
         console.log(gifWord)
         //Storing our giphy API URL for a ramdon cata image
-        var queryURL = 'http://api.giphy.com/v1/gifs/search?q='+ gifWord +'&api_key=RGGd6MKHcHQW7kQvmNIEHxcD0AyG9j2Q&limit=10';
+        var queryURL = 'https://api.giphy.com/v1/gifs/search?q='+ gifWord +'&api_key=RGGd6MKHcHQW7kQvmNIEHxcD0AyG9j2Q&limit=10';
         // Ajax GET request to our queryURL
         $.ajax({
             url: queryURL,
