@@ -17,6 +17,8 @@
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
     <!-- Moment.js -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Recaptcha -->
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
 
         <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -103,7 +105,7 @@
                     <label for="input-link">
                         <span>Website Link (i.e. LinkedIn or Portfolio Site)</span>
                     </label>
-                    <input placeholder="https://www.linkedin.com/" type="url" id="input-link">
+                    <input placeholder="https://www.yoursite.com/" type="text" id="input-link">
                 </div>
                 <div class="message__wrapper">
                     <label for="input-message">
@@ -135,10 +137,15 @@
                        <div class="users-giphy"></div> 
                     </div>
                 </div>
+                <div class="display__recaptcha">
+                    <span class="msg-error error"></span>
+                    <div class="g-recaptcha" data-sitekey="6LeOfDoUAAAAAH8HAuU7pTXHPQQfC7W5aEhsaH5l"></div>
+                    <!-- <button class="btn" id="btn-validate">Validate reCAPTCHA</button> -->
+                </div>
                 
                 <div class="form__btns">
 
-                    <button class="btn__medium submit__button" id="submit-button" type="submit">SUBMIT</button>
+                    <button class="btn__medium submit__button" id="btn-validate submit-button" type="submit">SUBMIT</button>
                     <button class="btn__medium btn__light reset__button" id="reset-button" type="reset">RESET</button>
 
                 </div>
@@ -151,9 +158,25 @@
 
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="assets/js/messageboard.js"></script>
+    <script type="text/javascript" src="assets/js/messageboard2.js"></script>
     <script type="text/javascript" src="assets/js/hidden.js"></script>
-
+    <script type="text/javascript">
+        $( '#btn-validate' ).click(function(){
+          var $captcha = $( '#recaptcha' ),
+              response = grecaptcha.getResponse();
+          
+          if (response.length === 0) {
+            $( '.msg-error').text( "reCAPTCHA is mandatory" );
+            if( !$captcha.hasClass( "error" ) ){
+              $captcha.addClass( "error" );
+            }
+          } else {
+            $( '.msg-error' ).text('');
+            $captcha.removeClass( "error" );
+            alert( 'reCAPTCHA marked' );
+          }
+        })
+    </script>
 
 
 </body>
