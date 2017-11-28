@@ -91,6 +91,7 @@ section {
 }
 
 .display__recaptcha {
+	margin: 15px;
 	display: flex;
 	justify-content: center;
 
