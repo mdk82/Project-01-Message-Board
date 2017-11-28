@@ -14,12 +14,14 @@ body, form {
 /*Font*/
 h1, h2, h3, h4, h5, span {
 	font-family: "Helvetica", Arial, Sans-Serif;
+  color: #323232;
 }
 
 p, label {
-	font-family: "Palatino", Georgia, Serif;
-	font-size: 16px;
-	line-height: 1.25em;
+	font-family: "Helvetica", Arial, Sans-Serif;
+	font-size: 14px;
+	line-height: 150%;
+  color: #414141;
 }
 
 h1 {
