@@ -88,3 +88,9 @@ section {
 	display: flex;
 	justify-content: center;
 }
+
+.display__recaptcha {
+	display: flex;
+	justify-content: center;
+
+}
