@@ -1,19 +1,30 @@
 @media screen and (min-width: 800px) {
+
+	section {
+		background-color: white;
+		max-width: 960px;
+		margin: 15px auto;
+		border-radius: 5px;
+		padding: 15px 50px;
+		box-shadow: 2px 2px 10px #323232;
+	}
 	
 	.description__container {
 		display: inline-flex;
+		padding: 20px 0;
 	}
 
 	.description p {
 		display: flex;
 		justify-content: flex-start;
+		margin: 0 75px;
 	}
 
 	.leave__message {
 		display: flex;
 		justify-content: flex-end;
 		margin: auto;
-		margin-right: 20px;
+		margin-right: 70px;
 		margin-left: 10px; 
 	}
 

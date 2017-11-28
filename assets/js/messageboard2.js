@@ -205,7 +205,7 @@ $('#submit-button').on('click', function() {
         ('<img id="display-gif" src="') + childSnapshot.val().giphy + ('">') +
         ('</div>') +
         ('<div class="message__portfolio center__align">') +
-        ('<button class="message__url btn__small btn__light">') + 'Portfolio' + ('</button>') +
+        ('<button class="message__url btn__small btn__blue">') + 'Portfolio' + ('</button>') +
         ('</div>') +
         ('</div') +
         ('</div>')
