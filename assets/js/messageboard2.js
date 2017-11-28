@@ -191,7 +191,7 @@ $('#submit-button').on('click', function() {
           } else {
             $( '.msg-error' ).text('');
             $captcha.removeClass( "error" );
-            alert( 'reCAPTCHA marked' );
+            // alert( 'reCAPTCHA marked' );
           }
 
 });
