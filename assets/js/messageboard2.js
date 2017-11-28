@@ -124,7 +124,7 @@ $(document).on('click','#shuffle-button',function() {
 // On click "submit-message" push all form values to variables //
 // =========================================================== // 
 
-$('#submit-button').on('click', function() {
+$('.submit-button').on('click', function() {
 
 	event.preventDefault();
 
