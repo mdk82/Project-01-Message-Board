@@ -180,20 +180,6 @@ $('#submit-button').on('click', function() {
     	$('#giphy-word').val("");
     	$(".users-giphy").empty();
 
-        var $captcha = $( '#recaptcha' ),
-              response = grecaptcha.getResponse();
-          
-          if (response.length === 0) {
-            $( '.msg-error').text( "reCAPTCHA is mandatory" );
-            if( !$captcha.hasClass( "error" ) ){
-              $captcha.addClass( "error" );
-            }
-          } else {
-            $( '.msg-error' ).text('');
-            $captcha.removeClass( "error" );
-            // alert( 'reCAPTCHA marked' );
-          }
-
 });
 
     // Dynamically creating elements to display review data //
