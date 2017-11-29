@@ -137,7 +137,7 @@ $('#submit-button').on('click', function() {
 
 		lastInt = lastName.charAt(0);
 
-		displayName = firstName + " " + lastInt;
+		displayName = firstName + " " + lastInt + ".";
 
     	// Adding date stamp on input with moment.js //
         // ========================================= //
