@@ -216,6 +216,65 @@ button:active {
 }
 
 
+.paper__button {
+  --border: 4px solid #021971;
+  width: 300px;
+  position: relative;
+  padding: 0;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  border: none;
+}
+.paper__button span {
+  display: block;
+  position: relative;
+  padding: 1.4em 4em;
+  background: #1641BC;
+  color: white;
+  border: var(--border);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+  z-index: 1;
+  will-change: transform;
+}
+.paper__button::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background: white;
+  border: var(--border);
+}
+
+.paper__button:hover {
+  background-color: transparent;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.paper__button:hover span {
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+}
+.paper__button:active span {
+  -webkit-transition: -webkit-transform .05s ease;
+  transition: -webkit-transform .05s ease;
+  transition: transform .05s ease;
+  transition: transform .05s ease, -webkit-transform .05s ease;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+
 /* Form Styles */
 input[type=text], input[type=email], input[type=url], input[type=tel]  {
 	width: 100%;

@@ -108,3 +108,8 @@ section {
 	justify-content: center;
 
 }
+
+.hidden__button {
+	margin: 0 25px 50px 0;
+	display: none;
+}
