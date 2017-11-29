@@ -7,6 +7,10 @@
 
     <!-- <link rel="icon" type="image/png" href="images/cubano-gw.png"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/desktop.css">
 
     <!-- Javascript/JQuery -->
     <script
@@ -19,14 +23,9 @@
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- Recaptcha -->
     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
-
-        <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
-    <link rel="stylesheet" href="assets/css/desktop.css">
 </head>
 
-<body>
+<body id="body">
     <div class="main__container">
         <header>
             <h2 class="fwhite center__align italic logo">PORTFOLIO MESSAGE APP</h2>
@@ -151,6 +150,13 @@
         </section>
         <footer class="footer page__footer fwhite">
             <h4 class="fwhite center__align">Message Board 2017 ®</h4>
+            <div id="hidden__button" class="hidden__button right__align">
+                <a href="admin-panel.html" target="_blank">
+                    <button class="paper__button">
+                        <span>ADMIN PANEL</span>
+                    </button>
+                </a>
+            </div>
         </footer>
     </div>
 

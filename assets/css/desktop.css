@@ -81,6 +81,10 @@
 		margin-left: 25px;
 	}
 
+	.hidden__button {
+		margin: 0 50px 50px 0;
+	}
+
 }
 
 
