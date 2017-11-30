@@ -34,8 +34,8 @@ dataRef.ref().on("child_added", function(childSnapshot) {
       ("<td>") + childSnapshot.val().last + ("</td>") +
       ("<td>") + childSnapshot.val().email + ("</td>") +
       ("<td>") + childSnapshot.val().phone + ("</td>") +
-      ("<td>") + childSnapshot.val().siteLink + ("</td>") +
-      ("<td>") + ('<button class="remove">remove</button>') + ("</td>") +
+      ("<td>") + ("<a href='") + childSnapshot.val().siteLink + ("'>PORTFOLIO</a>") +("</td>") +
+      ("<td>") + ('<button class="waves-effect waves-light btn remove">remove</button>') + ("</td>") +
       ("</tr>")
     );
 
